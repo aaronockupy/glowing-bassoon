@@ -143,6 +143,15 @@ a.navbar-item:hover {
   justify-content: center;
 }
 
+.about {
+  max-width: 800px;
+  text-align: justify;
+}
+@media screen and (min-width: 800px) {
+  .about {
+    padding-right:3rem;
+  }
+}
 .small-width {
   max-width: 300px;
 }
