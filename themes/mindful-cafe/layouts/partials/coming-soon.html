@@ -8,7 +8,7 @@
           <form name="newsletter" method="POST" netlify>
             <div class="field">
               <div class="control">
-                <input class="input small-width" type="email" placeholder="Email address">
+                <input class="input small-width" type="email" name="email" placeholder="Email address">
               </div>
             </div>
             <div class="field">
@@ -48,14 +48,14 @@
       <div class="field">
         <label class="label">Name</label>
         <div class="control">
-          <input class="input" type="text" placeholder="Full name">
+          <input class="input" type="text" name="name" placeholder="Full name">
         </div>
       </div>
 
       <div class="field">
         <label class="label">Email</label>
         <div class="control has-icons-left has-icons-right">
-          <input class="input" type="email" placeholder="Email address">
+          <input class="input" type="email" name="email" placeholder="Email address">
           <span class="icon is-small is-left">
             <i class="fas fa-envelope"></i>
           </span>
@@ -66,7 +66,7 @@
         <label class="label">Subject</label>
         <div class="control">
           <div class="select">
-            <select>
+            <select name="career[]" multiple>
               <option>Select one..</option>
               <option>Cafe Position</option>
               <option>Tutor Position</option>
@@ -78,7 +78,7 @@
       <div class="field">
         <label class="label">Message</label>
         <div class="control">
-          <textarea class="textarea" placeholder="Your message"></textarea>
+          <textarea class="textarea" name="message" placeholder="Your message"></textarea>
         </div>
       </div>
       <div class="field">
