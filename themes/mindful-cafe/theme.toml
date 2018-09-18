@@ -1,0 +1,8 @@
+name = "Mindful Cafe"
+license = "MIT"
+description = "Just for The Mindful Cafe"
+homepage = "https://supersweetsites.com"
+min_version = 0.15
+
+[author]
+  name = "Aaron"

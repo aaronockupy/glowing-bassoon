@@ -1,0 +1,39 @@
+<header class="blog-header">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item site-title" href="{{ .Site.BaseURL }}">
+            {{ .Site.Title }}
+        </a>
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+          <div class="navbar-start">
+                  <a class="navbar-item social-media" href="https://www.facebook.com/TheMindfulCafe/" target="_blank">
+                    <span class="icon"><i class="fab fa-facebook"></i>
+                    </span></a>
+                  <a class="navbar-item social-media" href="https://www.instagram.com/mindfulcafe/" target="_blank">
+                    <span class="icon"><i class="fab fa-instagram"></i>
+                    </span></a>
+                  </a>
+            </div>
+              <div class="navbar-end">
+                <a class="navbar-item" href="#now-hiring">Now Hiring</a>
+                {{ $url := .URL }}
+                {{ range .Site.Menus.main }}
+                    <a class="navbar-item" href="{{ .URL }}">{{ .Name }}</a>
+                {{ end }}
+
+            {{ if gt (len .Site.Home.AllTranslations) 1 }}
+
+            <ul class="navbar-nav">
+
+            </ul>
+          </div>
+            {{ end }}
+        </div>
+    </nav>
+</header>
